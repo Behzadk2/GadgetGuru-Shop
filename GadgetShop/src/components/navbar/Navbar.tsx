@@ -10,7 +10,6 @@ function Navbar() {
       <ul className='flex flex-row'>
         <li className='ml-4'><Link to='{/}' >Home</Link></li>
         <li  className='ml-4'><Link to='{/}' >Store</Link></li>
-
       </ul>
       <div>
         <button>basket</button>
