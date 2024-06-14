@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import Container from '../../components/container/Container'
+import Button from '../../components/button/Button'
 
 function Product() {
 
@@ -20,7 +21,7 @@ function Product() {
                 </div>
                 <div className='col-span-2 p-4 bg-slate-400' >
                 <img className="rounded w-24" src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="" />
-                <div><button>add to card</button></div>
+                <Button onClick={()=>{alert("added")}}>Add to Card</Button>
                 </div>
             </div>
         </Container>
