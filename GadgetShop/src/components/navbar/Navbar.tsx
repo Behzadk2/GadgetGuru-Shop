@@ -8,8 +8,8 @@ function Navbar() {
     <Container>
       <div className='flex flex-row justify-between'>
       <ul className='flex flex-row'>
-        <li className='ml-4'><Link to='{/}' >Home</Link></li>
-        <li  className='ml-4'><Link to='{/}' >Store</Link></li>
+        <li className='ml-4'><Link to='/' >Home</Link></li>
+        <li  className='ml-4'><Link to='/store' >Store</Link></li>
       </ul>
       <div>
         <button>basket</button>
