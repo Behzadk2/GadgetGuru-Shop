@@ -12,7 +12,7 @@ function Navbar() {
         <li  className='ml-4'><Link to='/store' >Store</Link></li>
       </ul>
       <div>
-        <button>basket</button>
+      <Link to='/cart' >  <button>basket</button></Link>
       </div>
       </div>
       </Container>

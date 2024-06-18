@@ -1,9 +1,10 @@
 
 
 function ProductItem() {
+  const imgS = 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg';
   return (
     <div className="shadow border rounded pb-2">
-      <img className="rounded-t" src="" alt="" />
+      <img className="rounded-t" src={imgS} alt="" />
       <div className="flex justify-between flex-row px-4 mt-2">
         <h3>Product Title </h3>
         <span>55 $</span>
