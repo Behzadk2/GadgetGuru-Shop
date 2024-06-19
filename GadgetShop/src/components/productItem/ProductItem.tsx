@@ -1,18 +1,19 @@
+import { Product } from "../../types/server";
 
 
-function ProductItem() {
-  const imgS = 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg';
-  return (
+
+function ProductItem({title,price,image,description}: Product) {
+   return (
     <div className="shadow border rounded pb-2">
-      <img className="rounded-t" src={imgS} alt="" />
+      <img className="rounded-t size-40" src={image} alt="" />
       <div className="flex justify-between flex-row px-4 mt-2">
-        <h3>Product Title </h3>
-        <span>55 $</span>
+        <h3>{title}</h3>
+        <span>{price} $</span>
       </div>
       <div className="px-4 mt-1">
-       <p className="line-clamp-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, minus velit aut amet similique quae blanditiis. Porro blanditiis ducimus doloremque fugit iure deserunt quisquam aspernatur obcaecati quaerat perferendis, in est?
-       </p> 
+       <p className="line-clamp-5 text-gray-400 ">
+        Description : {description}
+        </p> 
        </div>
     </div>
   )
