@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Container from '../../components/container/Container'
 import CartItem from '../../components/cartItem/CartItem'
 import Button from '../../components/button/Button'
+import { shopingCartContext } from '../../components/context/ShopingCartContext.tsx'
 
 function Cart() {
+
+
+  const{cartItem}=useContext(shopingCartContext);
+
+  //cartItem.map(item=>{item.id})
+
   return (
     <div>
       <Container>

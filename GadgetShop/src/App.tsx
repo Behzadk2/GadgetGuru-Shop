@@ -4,13 +4,18 @@ import Store from "./pages/store/Store"
 import Layout from "./components/layout/Layout"
 import Product from "./pages/product/Product"
 import Cart from "./pages/cart/Cart"
+import { shopingCartContext } from "./components/context/ShopingCartContext.tsx"
+import { useState } from "react"
+
+
 
 
 function App() {
 
-
+const[cartItem,setCartItems]=useState<[]>([])
   return (
-    <Layout>
+    <shopingCartContext.Provider value={{cartItem}}>
+<Layout>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/store" element={<Store />} />
@@ -18,6 +23,9 @@ function App() {
       <Route path="/cart" element={<Cart />} />
     </Routes>
     </Layout>
+
+    </shopingCartContext.Provider>
+    
   )
 }
 
